@@ -54,6 +54,7 @@ const UserSchema: Schema<User> = new Schema<User>({
     required: [true, "VerifyCodeExpiry is required"],
   },
   isVarified: {
+    type: Boolean,
     default: false,
   },
   isAcceptingMessage: {
